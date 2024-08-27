@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "projects"
+    "displayName": "projects",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,24 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "githubLink": {
       "type": "string"
     },
     "url": {
       "type": "string"
+    },
+    "techs": {
+      "type": "json"
     }
   }
 }
